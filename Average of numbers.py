@@ -1,7 +1,6 @@
-from turtle import done
-
-
+#title
 print("------ Calculate average of numbers! -----")
+
 #list of numbers inserted by user:
 numbers = []
 
