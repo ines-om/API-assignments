@@ -4,4 +4,4 @@
 
 🌚 These assignments will be optimized in due time and will be used to strengthen my comfortability in Python.
 
-📚 Categorization: Commits prefaced by "Calc- " have the main purpose of performing a given calculation.
+📚 Categorization: Files prefaced by "Calc- " have the main purpose of performing a given calculation.
