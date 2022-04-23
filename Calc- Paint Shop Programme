@@ -1,0 +1,48 @@
+from math import ceil
+#Variable Names are in Portuguese
+
+print("------- Programme for Paint Store -------" + "\n")
+
+area = input("Insert the area of surface to be painted:  ")
+print("\n")
+
+print("CAN - INFO:" + "\n")
+
+# 1L corresponds to 3 m^2
+tinta = int(area)/3
+
+#1 lata corresponds to 18L
+latas = ceil(int(tinta)/18)
+print("Quantity of cans necessary: " + str(latas))
+#preço a pagar
+preço = int(latas)*95
+print("Can Price: " + str(preço) + "€")
+
+#Discount option
+print("\n" + "DISCOUNTS:")
+desconto = input("INSERT DISCOUNT PERCENTAGE: ")
+
+if (1<=int(desconto)<=100):
+    desc = int(preço)*int(desconto)*(1/100)
+    preço_desc = int(preço) - int(desc)
+    print("Price without discount: " + str(preço_desc) +"€")
+    IVA = 23*1/100*int(preço_desc)
+    print("\n" + "IVA:")
+    print("IVA Value: " + str(IVA) + "€")
+    total = int(preço_desc) + int(IVA)
+    print("-----")
+    print("TOTAL PRICE:" + str(total) + "€")
+    print("-----")
+    print("Process Complete!")
+elif int(desconto) == 0:
+    IVA = (23*1/100)*int(preço)
+    print("\n" + "IVA:")
+    print("IVA Value: " + str(IVA) + "€")
+    total = int(preço) + int(IVA)
+    print("-----")
+    print("TOTAL PRICE:" + str(total) + "€")
+    print("-----")
+    print("Process Complete!")
+else:
+    print("Invalid Value.")
+
