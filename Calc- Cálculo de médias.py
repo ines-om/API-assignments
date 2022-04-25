@@ -17,7 +17,9 @@ for i in range(0, int(nr_d)):
         continue
     else:
         print("Valores inválidos! Notas de 0-20.")
-        break
+        another_value = input("Tente outra vez:  ")
+        notas.append(int(another_value))
+        continue
 
 
 print("\n" + "----")
